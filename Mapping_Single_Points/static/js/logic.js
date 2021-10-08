@@ -15,3 +15,8 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
 
 // Then we add our 'graymap' tile layer to the map.
 streets.addTo(map);
+
+
+//Adding a markee to the map. We only need this line from the website
+var marker = L.marker([51.5, -0.09]).addTo(map);
+
