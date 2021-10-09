@@ -40,6 +40,8 @@ let map = L.map('mapid').setView([40.7, -94.5], 4);
 //     population: 1660272
 //   }
 //   ];
+
+
 // Get data from cities.js
 /// When handling large databases, it's a best pratice to have the data in an external 
 //file and refer to that file and dataset in the logic.js
@@ -52,9 +54,17 @@ let cityData = cities;
 //    });
 ///We are replacing the above code to a foor loop 
 // Loop through the cities array and create one marker for each city.
+// cityData.forEach(function(city) {
+//     console.log(city)
+//     L.marker(city.location).addTo(map);
+// });
+///Above code is wrong, will use the below one
+// Loop through the cities array and create one marker for each city.
 cityData.forEach(function(city) {
     console.log(city)
-    L.marker(city.location).addTo(map);
+    L.marker(city.location)
+    .bindPopup("<h2>" + city.city + ", " + city.state + "</h2> <hr> <h3>Population " + city.population.toLocaleString() + "</h3>")
+  .addTo(map);
 });
 
 // Add a marker to the map for Los Angeles, California 
