@@ -41,18 +41,13 @@ let baseMaps = {
 /////DELIVERY ONE 
 // 1. Add a 2nd layer group for the tectonic plate data.
 let allEarthquakes = new L.LayerGroup();
-// Delivery 1
 let tectonic = new L.LayerGroup();
-// Delivery 2
-// 1. Add a 3rd layer group for the major earthquake data.
 let majorEarthquakes = new L.LayerGroup();
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
   "Earthquakes": allEarthquakes,
   "Tectonic Plates": tectonic,
-  // Delivery 2
-  // 2. Add a reference to the major earthquake group to the overlays object.
   "Major Earthqakes":majorEarthquakes
 };
 
@@ -222,9 +217,9 @@ legend.onAdd = function() {
 
 // Create a style for the lines.
 let myStyle = {
-  color: "blue",
+  color: "orange",
   fill:false,
-  weight: 1
+  weight: 3
 
 }
 

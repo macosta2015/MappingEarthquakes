@@ -7,18 +7,18 @@ body,
   margin: 0;
 }
 
-#menu {
+/* #menu {
     position: absolute;
-    background: #efefef;
+    background: #0e0000;
     padding: 10px;
     font-family: 'Open Sans', sans-serif;
-}  
+}   */
 
 .legend {
   padding: 10px;
   line-height: 18px;
-  color: #555;
-  background-color: #fff;
+  color: rgb(14, 1, 1);
+  background-color: rgb(252, 236, 236);
   border-radius: 5px;
 }
 
@@ -27,5 +27,5 @@ body,
   height: 18px;
   float: left;
   margin-right: 8px;
-  opacity: 0.7;
+  opacity: 0.3;
 }
